@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>signUp</title>
+<script type="text/javscript">
+function ikusBalioak(){
+	var sAux="";
+	var frm=document.getElementById("erregistro");
+	for(i=1;i<frm.elements.length;i++){
+	sAux +="IZENA:" + frm.elements[i].name+"";
+	sAux +="BALIOA:" + frm.elements[i].value+"\n";
+	}
+	alert(sAux);
+}
+
+</script>
+</head>
+<body>
+<h1>Sign up</h1>
+<form id="erregistro" name="erregistro" onSubmit="ikusBalioak()">
+
+Izena:<br>
+<input type="text" id="Izena" name="Izena">
+</input>
+<br><br>
+Abizena:<br>
+<input type="text" id="Abizena" name="Abizena">
+</input>
+<br><br>
+Eposta:<br>
+<input type="text" id="Eposta" name="Eposta">
+</input>
+<br><br>
+
+Pasahitza:<br>
+<input type="password" id="Pasahitza" name="Pasahitza">
+</input>
+<br><br>
+
+Telefono zenbakia:<br>
+<input type="text" id="Telefonoa" name="Telefonoa">
+</input>
+<br><br>
+
+Interesa duzun teknologiak:
+<br>
+<textarea name="Teknologiak" id="Teknologiak"" cols="30" rows="10"></textarea>
+<br><br>
+<input type="submit" value="Submit"></input>
+</form>
+</body>
+</html>
