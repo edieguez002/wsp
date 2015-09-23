@@ -8,8 +8,8 @@ function ikusBalioak(){
 	var sAux="";
 	var frm=document.getElementById("erregistro");
 	for(i=0;i<frm.elements.length;i++){
-	sAux +="IZENA:" + frm.elements[i].name+"";
-	sAux +="BALIOA:" + frm.elements[i].value+"\n";
+		sAux +="IZENA:" + frm.elements[i].name+"";
+		sAux +="BALIOA:" + frm.elements[i].value+"\n";
 	}
 	alert(sAux);
 }
@@ -39,7 +39,7 @@ Telefono zenbakia:<br>
 <br><br>
 
 Espezialitatea:<br>
-<input type="radio" value="Software" name="Informatika" id="Software">Software Ingeniaritza<br>
+<input type="radio" value="Software" name="Informatika" id="Software" CHECKED>Software Ingeniaritza<br>
 <input type="radio" value="Konputazio" name="Informatika" id="Konputazio">Konputazioa<br>
 <input type="radio" value="Hardware" name="Informatika" id="Hardware">Konputagailuen Ingeniaritza<br><br>
 
