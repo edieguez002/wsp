@@ -8,8 +8,8 @@ function ikusBalioak(){
 	var sAux="";
 	var frm=document.getElementById("erregistro");
 	for(i=0;i<frm.elements.length-2;i++){
-		alert("khdfskhf");
-		if (typeof frm.elements[i]=="radio"){
+		
+		if (frm.elements[i].typeof=="radio"){
 			
 			if(frm.elements[i].checked==true){
 				sAux +="IZENA:" + frm.elements[i].name+"";
