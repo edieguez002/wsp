@@ -1,11 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+</head>
 <title>signUp</title>
 <script type="text/javascript">
 function ikusBalioak(){
 	var sAux="";
 	var frm=document.getElementById("erregistro");
-	for(i=1;i<frm.elements.length;i++){
+	for(i=0;i<frm.elements.length;i++){
 	sAux +="IZENA:" + frm.elements[i].name+"";
 	sAux +="BALIOA:" + frm.elements[i].value+"\n";
 	}
@@ -20,30 +23,26 @@ function ikusBalioak(){
 
 Izena:<br>
 <input type="text" id="Izena" name="Izena">
-</input>
 <br><br>
 Abizena:<br>
 <input type="text" id="Abizena" name="Abizena">
-</input>
 <br><br>
 Eposta:<br>
 <input type="text" id="Eposta" name="Eposta">
-</input>
 <br><br>
 
 Pasahitza:<br>
 <input type="password" id="Pasahitza" name="Pasahitza">
-</input>
 <br><br>
 
 Telefono zenbakia:<br>
 <input type="text" id="Telefonoa" name="Telefonoa">
-</input>
 <br><br>
+</input>
 
 Interesa duzun teknologiak:
 <br>
-<textarea name="Teknologiak" id="Teknologiak"" cols="30" rows="10"></textarea>
+<textarea name="Teknologiak" id="Teknologiak" cols="30" rows="10"></textarea>
 <br><br>
 <button type="button" onclick="ikusBalioak()">Submit</button>
 <button onclick="history.back()">Atzera</button>
